@@ -1,0 +1,198 @@
+,feature,varname,domain,path,time_variant,median_impute,unit,valid_range,required,binary,used
+0,nibp_map,nibp_mean,vital_sign,data/vital_sign/nibp_mean,True,True,mmHg,"[10, 300]",False,False,True
+1,nibp_sys,nibp_systolic,vital_sign,data/vital_sign/nibp_systolic,True,True,mmHg,"[10, 300]",False,False,True
+2,nibp_dia,nibp_diastolic,vital_sign,data/vital_sign/nibp_diastolic,True,True,mmHg,"[5, 200]",False,False,True
+3,ibp_map,ibp_mean,vital_sign,data/vital_sign/ibp_mean,True,True,mmHg,"[10, 300]",False,False,True
+4,ibp_sys,ibp_systolic,vital_sign,data/vital_sign/ibp_systolic,True,True,mmHg,"[10, 300]",False,False,True
+5,ibp_dia,ibp_diastolic,vital_sign,data/vital_sign/ibp_diastolic,True,True,mmHg,"[5, 200]",False,False,True
+6,temp,body_temperature,vital_sign,data/vital_sign/body_temperature,True,True,%,"[20, 45]",True,False,True
+7,spo2,spo2,vital_sign,data/vital_sign/spo2,True,True,%,"[30, 100]",True,False,True
+8,hr,heart_rate,vital_sign,data/vital_sign/heart_rate,True,True,1/min,"[10, 250]",True,False,True
+9,puls,puls,vital_sign,data/vital_sign/puls,True,True,1/min,"[10, 250]",False,False,True
+10,psi,psi,eeg,data/eeg/psi,True,True,-,"[0, 100]",True,False,True
+11,sef_left,sef_left,eeg,data/eeg/sef_left,True,True,Hz,"[10, 100]",False,False,True
+12,sef_right,sef_right,eeg,data/eeg/sef_right,True,True,Hz,"[10, 100]",False,False,True
+13,eeg_artifact,artifact_level,eeg,data/eeg/artifact_level,True,True,%,"[0, 100]",False,False,True
+14,emg,emg,eeg,data/eeg/emg,True,True,-,"[0, 100]",False,False,True
+15,rr_meas,respiratory_rate,vital_sign,data/vital_sign/respiratory_rate,True,True,1/min,"[3, 100]",False,False,True
+16,rr_set,respiratory_rate_meas,vital_sign,data/vital_sign/respiratory_rate_meas,True,True,1/min,"[3, 100]",False,False,True
+17,fio2_meas,fio2_meas,respiratory,data/respiratory/fio2_meas,True,True,%,"[10, 100]",False,False,True
+18,fio2_set,fio2_set,respiratory,data/respiratory/fio2_set,True,True,%,"[10, 100]",False,False,True
+19,tid_vol,tidal_volume,respiratory,data/respiratory/tidal_volume,True,True,ml,"[0, 1000]",False,False,True
+20,compliance,compliance,respiratory,data/respiratory/compliance,True,True,ml/cmH20,"[0, 500]",False,False,True
+21,pinsp,pinsp,respiratory,data/respiratory/pinsp,True,True,-,"[0, 30]",False,False,True
+22,pip,pip,respiratory,data/respiratory/pip,True,True,cmH2O,"[0, 30]",False,False,False
+23,horovitz,horovitz_index,respiratory,data/respiratory/horovitz_index,True,True,mmHg,"[0, 30]",False,False,False
+24,ppeak,ppeak,respiratory,data/respiratory/ppeak,True,True,cmH2O,"[0, 30]",False,False,True
+25,peep_set,peep_set,respiratory,data/respiratory/peep_set,True,True,cmH2O,"[0, 30]",False,False,True
+26,peep_meas,peep_meas,respiratory,data/respiratory/peep_meas,True,True,cmH2O,"[0, 30]",False,False,True
+27,curr_in_class_antibiotic,drug_class_antibiotics,inputs,data/inputs/drug_class_antibiotics,True,False,-,None,False,True,True
+28,curr_in_class_antidepress,drug_class_antidepressant,inputs,data/inputs/drug_class_antidepressant,True,False,-,None,False,True,False
+29,curr_in_class_benzo,drug_class_benzodiazipine,inputs,data/inputs/drug_class_benzodiazipine,True,False,-,None,False,True,False
+30,curr_in_class_cortico,drug_class_corticosteroids,inputs,data/inputs/drug_class_corticosteroids,True,False,-,None,False,True,True
+31,curr_in_class_opioid,drug_class_opioid,inputs,data/inputs/drug_class_opioid,True,False,-,None,False,True,True
+32,curr_in_class_parasymp,drug_class_parasympatholytic,inputs,data/inputs/drug_class_parasympatholytic,True,False,-,None,False,True,False
+33,curr_in_class_sedativ,drug_class_sedative,inputs,data/inputs/drug_class_sedative,True,False,-,None,False,True,True
+34,curr_in_class_seteroid,drug_class_steroids,inputs,data/inputs/drug_class_steroids,True,False,-,None,False,True,True
+35,in_am_metamiz,amount_metamizol,inputs,data/inputs/amount_metamizol,True,False,mg,"[0, 10]",False,False,True
+36,in_am_fent,amount_fentanyl,inputs,data/inputs/amount_fentanyl,True,False,mg,"[0, 1]",False,False,False
+37,in_am_propo,amount_propofol,inputs,data/inputs/amount_propofol,True,False,mg,"[0, 2000]",False,False,True
+38,in_rt_propo,rate_propofol,inputs,data/inputs/rate_propofol,True,True,mg/kg/h,"[0, 1]",False,False,True
+39,in_am_remif,amount_remifentanil,inputs,data/inputs/amount_remifentanil,True,False,mg,"[0, 10000]",False,False,True
+40,in_rt_remif,rate_remifentanil,inputs,data/inputs/rate_remifentanil,True,True,mg/kg/h,"[0, 1]",False,False,True
+41,in_am_sufentanil,amount_sufentanil,inputs,data/inputs/amount_sufentanil,True,False,µg,"[0, 2000]",False,False,True
+42,in_am_mivacurium,amount_mivacurium,inputs,data/inputs/amount_mivacurium,True,False,mg,"[0, 200]",False,False,True
+43,in_am_clonidin,amount_clonidin,inputs,data/inputs/amount_clonidin,True,False,µg,"[0, 1000]",False,False,True
+44,in_am_heparine,amount_heparine,inputs,data/inputs/amount_heparine,True,False,IU,"[0, 100000]",False,False,False
+45,in_am_nacl,amount_nacl,inputs,data/inputs/amount_nacl,True,False,ml,"[0, 2000]",False,False,False
+46,in_am_pack_rbc,amount_packed_red_blood_cells,inputs,data/inputs/amount_packed_red_blood_cells,True,False,ml,"[0, 2000]",False,False,False
+47,in_am_morphine,amount_morphine,inputs,data/inputs/amount_morphine,True,False,mg,"[0, 100]",False,False,False
+48,in_vol_plasma,volume_plasma,inputs,data/inputs/volume_plasma,True,False,ml,"[0, 500]",False,False,False
+49,in_am_norep,amount_norepinephrin,inputs,data/inputs/amount_norepinephrin,True,False,mg,"[0, 1]",False,False,True
+50,in_am_epin,amount_epinephrin,inputs,data/inputs/amount_epinephrin,True,False,mg,"[0, 1]",False,False,False
+51,in_rt_norep,rate_norepinephrin,inputs,data/inputs/rate_norepinephrin,True,True,mg/kg/h,"[0, 1]",False,False,True
+52,in_rt_epin,rate_epinephrin,inputs,data/inputs/rate_epinephrin,True,True,mg/kg/h,"[0, 1]",False,False,False
+53,in_vol_elyts,volume_water-full_electrolyte_solution,inputs,data/inputs/volume_water-full_electrolyte_solution,True,False,ml,"[0, 10000]",False,False,True
+54,in_am_piri,amount_piritramid,inputs,data/inputs/amount_piritramid,True,False,mg,"[0, 20]",False,False,True
+55,in_am_ampisulbac,amount_ampicillin_sulbactam,inputs,data/inputs/amount_ampicillin_sulbactam,True,False,g,"[0, 5]",False,False,True
+56,in_am_cefazol,amount_cefazolin,inputs,data/inputs/amount_cefazolin,True,False,g,"[0, 5]",False,False,True
+57,in_am_cisatr,amount_cisatracurium,inputs,data/inputs/amount_cisatracurium,True,False,mg,"[0, 100]",False,False,True
+58,in_am_dexam,amount_dexamethason,inputs,data/inputs/amount_dexamethason,True,False,mg,"[0, 10]",False,False,True
+59,in_am_ondan,amount_ondansetron,inputs,data/inputs/amount_ondansetron,True,False,mg,"[0, 200]",False,False,True
+60,in_am_parec,amount_parecoxib,inputs,data/inputs/amount_parecoxib,True,False,mg,"[0, 1000]",False,False,True
+61,in_am_rocur,amount_rocuronium,inputs,data/inputs/amount_rocuronium,True,False,mg,"[0, 1000]",False,False,True
+62,out_vol_urine_inv,urine_invasive,outputs,data/outputs/urine_invasive,True,False,ml,"[0, 4000]",False,False,True
+63,out_vol_urine_spon,urine_spontan,outputs,data/outputs/urine_spontan,True,False,mg,"[0, 4000]",False,False,False
+64,out_vol_blood,blood,outputs,data/outputs/blood,True,False,ml,"[0, 10000]",False,False,True
+65,out_vol_urine_total,urine,outputs,data/outputs/urine,True,False,ml,"[0, 4000]",False,False,True
+66,praem_oplen,praem_op_len,demographics,data/demographics/praem_op_len,False,True,minutes,"[0, 1500]",False,False,True
+67,age,age,demographics,data/demographics/age,False,True,years,"[18, 200]",True,False,True
+68,bmi,bmi,demographics,data/demographics/bmi,False,True,kg/m2,"[5, 50]",False,False,True
+69,gender,gender,demographics,data/demographics/gender,False,False,-,"[-1, 1]",True,True,True
+70,body_length,body_length,demographics,data/demographics/body_length,False,False,-,"[50, 300]",False,False,True
+71,body_weight,body_weight,demographics,data/demographics/body_weight,False,False,-,"[20, 500]",False,False,True
+72,bartl,barthel_index,scores_and_scales,data/scores_and_scales/barthel_index,False,True,-,"[0, 100]",False,False,False
+73,frail,frailty_index,scores_and_scales,data/scores_and_scales/frailty_index,False,True,-,"[0, 5]",False,False,False
+74,mini_cog,mini-cog,scores_and_scales,data/scores_and_scales/mini-cog,False,True,-,"[0, 5]",False,False,False
+75,gcs,gcs,scores_and_scales,data/scores_and_scales/gcs,False,True,-,"[3, 15]",False,False,False
+76,apache_ii,apache_ii,scores_and_scales,data/scores_and_scales/apache_ii,False,True,-,"[0, 60]",False,False,False
+77,nudesc,nu_desc,scores_and_scales,data/scores_and_scales/nu_desc,False,True,-,"[0, 10]",False,False,False
+78,met_equi,metabolic_equivalents,scores_and_scales,data/scores_and_scales/metabolic_equivalents,False,True,-,"[0, 11]",False,False,True
+79,rass,rass,scores_and_scales,data/scores_and_scales/rass,False,True,-,"[-5, 4]",False,False,True
+80,nrs,pain_nrs,scores_and_scales,data/scores_and_scales/pain_nrs,True,True,-,"[0, 10]",False,False,False
+81,nutr_nrs,nutrition_nrs,scores_and_scales,data/scores_and_scales/nutrition_nrs,True,True,-,"[-1, 7]",False,False,False
+82,asa,asa_status,scores_and_scales,data/scores_and_scales/asa_status,False,True,-,"[0, 6]",True,False,True
+83,op_n,op_n_class,scores_and_scales,data/scores_and_scales/op_n_class,False,True,-,"[0, 5]",True,False,True
+84,durat_preoxygi,preoxygination_ventilation_therapy_time,support_procedures,data/support_procedures/preoxygination_ventilation_therapy_time,True,False,-,None,False,True,True
+85,durat_pcv_vent,pcv_ventilation_therapy_time,support_procedures,data/support_procedures/pcv_ventilation_therapy_time,True,False,-,None,False,True,True
+86,durat_vcv_vent,vcv_ventilation_therapy_time,support_procedures,data/support_procedures/vcv_ventilation_therapy_time,True,False,-,None,False,True,False
+87,durat_psv_vent,psv_ventilation_therapy_time,support_procedures,data/support_procedures/psv_ventilation_therapy_time,True,False,-,None,False,True,False
+88,durat_endotr,endotracheal_tube_access_time,support_procedures,data/support_procedures/endotracheal_tube_access_time,True,False,-,None,False,True,True
+89,durat_urine,urine_drain_access_time,support_procedures,data/support_procedures/urine_drain_access_time,True,False,-,None,False,True,False
+90,durat_surg_drain,surgical_drain_access_time,support_procedures,data/support_procedures/surgical_drain_access_time,True,False,-,None,False,True,False
+91,durat_cath_access,cathether_access_time,support_procedures,data/support_procedures/cathether_access_time,True,False,-,None,False,True,True
+92,durat_gast_tube,gastric_tube_access_time,support_procedures,data/support_procedures/gastric_tube_access_time,True,False,-,None,False,True,False
+93,durat_insufflation,o2_insufflation_ventilation_therapy_time,support_procedures,data/support_procedures/o2_insufflation_ventilation_therapy_time,True,False,-,None,False,True,True
+94,curr_compl_supplies,missing_supplies_op_complication,support_procedures,data/support_procedures/missing_supplies_op_complication,False,False,-,None,False,True,True
+95,curr_compl_change,unplanned_change_of_procedure_op_complication,support_procedures,data/support_procedures/unplanned_change_of_procedure_op_complication,False,False,-,None,False,True,True
+96,curr_compl_endotr_access,endotracheal_tube_access_complication,support_procedures,data/support_procedures/endotracheal_tube_access_complication,False,False,-,None,False,True,True
+97,curr_compl_urine_drain,urine_drain_access_complication,support_procedures,data/support_procedures/urine_drain_access_complication,False,False,-,None,False,True,True
+98,curr_compl_shortage,shortage_anesthesiologist_op_complication,support_procedures,data/support_procedures/shortage_anesthesiologist_op_complication,False,False,-,None,False,True,True
+99,curr_compl_delay_surg,delay_surgeon_op_complication,support_procedures,data/support_procedures/delay_surgeon_op_complication,False,False,-,None,False,True,True
+100,curr_compl_patient_inform,patient_information_need_op_complication,support_procedures,data/support_procedures/patient_information_need_op_complication,False,False,-,None,False,True,True
+101,curr_compl_cath_access,cathether_access_complication,support_procedures,data/support_procedures/cathether_access_complication,False,False,-,None,False,True,True
+102,curr_compl_delay_pat,delay_patient_op_complication,support_procedures,data/support_procedures/delay_patient_op_complication,False,False,-,None,False,True,True
+103,curr_compl_other,other_free_text_op_complication,support_procedures,data/support_procedures/other_free_text_op_complication,False,False,-,None,False,True,True
+104,curr_compl_general,general_op_complication,support_procedures,data/support_procedures/general_op_complication,False,False,-,None,False,True,True
+105,anes_analogo,type_analogo_sedation,anesthesia_procedures,data/anesthesia_procedures/type_analogo_sedation,False,False,-,None,False,True,True
+106,anes_spinepi,type_combination_spinal_epidural_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_combination_spinal_epidural_anesthesia,False,False,-,None,False,True,True
+107,anes_epidu,type_epidural_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_epidural_anesthesia,False,False,-,None,False,True,True
+108,anes_balanced,type_general_balanced_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_general_balanced_anesthesia,False,False,-,None,False,True,True
+109,anes_infiltr,type_infiltration_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_infiltration_anesthesia,False,False,-,None,False,True,True
+110,anes_interscale,type_interscalene_block,anesthesia_procedures,data/anesthesia_procedures/type_interscalene_block,False,False,-,None,False,True,True
+111,anes_ivreg,type_intravenous_regional_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_intravenous_regional_anesthesia,False,False,-,None,False,True,True
+112,anes_n_femoral,type_n_femoralis_block,anesthesia_procedures,data/anesthesia_procedures/type_n_femoralis_block,False,False,-,None,False,True,True
+113,anes_n_ischiadic,type_n_ischiadicus_block,anesthesia_procedures,data/anesthesia_procedures/type_n_ischiadicus_block,False,False,-,None,False,True,True
+114,anes_periblock,type_peripheral_block_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_peripheral_block_anesthesia,False,False,-,None,False,True,True
+115,anes_pesc,type_pesc_block,anesthesia_procedures,data/anesthesia_procedures/type_pesc_block,False,False,-,None,False,True,True
+116,anes_plex,type_plexus_brachialis_block,anesthesia_procedures,data/anesthesia_procedures/type_plexus_brachialis_block,False,False,-,None,False,True,True
+117,anes_psoas,type_psoas_compartment_block,anesthesia_procedures,data/anesthesia_procedures/type_psoas_compartment_block,False,False,-,None,False,True,True
+118,anes_spinal,type_spinal_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_spinal_anesthesia,False,False,-,None,False,True,True
+119,anes_standby,type_stand_by_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_stand_by_anesthesia,False,False,-,None,False,True,True
+120,anes_tapblock,type_tap_block,anesthesia_procedures,data/anesthesia_procedures/type_tap_block,False,False,-,None,False,True,True
+121,anes_toplocal,type_topical_local_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_topical_local_anesthesia,False,False,-,None,False,True,True
+122,anes_totaliv,type_total_intravenous_anesthesia,anesthesia_procedures,data/anesthesia_procedures/type_total_intravenous_anesthesia,False,False,-,None,False,True,True
+123,hst_lymp_op,ops_history_lymphatic_system,operation_procedures,data/operation_procedures/ops_history_lymphatic_system,False,False,-,None,False,False,True
+124,hst_horm_op,ops_history_hormon_system,operation_procedures,data/operation_procedures/ops_history_hormon_system,False,False,-,None,False,False,True
+125,hst_hear_op,ops_history_hearing_organs,operation_procedures,data/operation_procedures/ops_history_hearing_organs,False,False,-,None,False,False,True
+126,hst_skin_op,ops_history_skin,operation_procedures,data/operation_procedures/ops_history_skin,False,False,-,None,False,False,True
+127,hst_face_op,ops_history_facial_organs,operation_procedures,data/operation_procedures/ops_history_facial_organs,False,False,-,None,False,False,True
+128,hst_visual_op,ops_history_visual_organs,operation_procedures,data/operation_procedures/ops_history_visual_organs,False,False,-,None,False,False,True
+129,hst_digest_op,ops_history_digestive_tract,operation_procedures,data/operation_procedures/ops_history_digestive_tract,False,False,-,None,False,False,True
+130,hst_resp_op,ops_history_respiratory_tract,operation_procedures,data/operation_procedures/ops_history_respiratory_tract,False,False,-,None,False,False,True
+131,hst_olfac_op,ops_history_olfactory_organs,operation_procedures,data/operation_procedures/ops_history_olfactory_organs,False,False,-,None,False,False,True
+132,hst_urin_op,ops_history_urinary_system,operation_procedures,data/operation_procedures/ops_history_urinary_system,False,False,-,None,False,False,True
+133,hst_motor_op,ops_history_motoric_organs,operation_procedures,data/operation_procedures/ops_history_motoric_organs,False,False,-,None,False,False,True
+134,curr_dem,dementia,medical_history,data/medical_history/dementia,False,False,-,None,False,True,True
+135,curr_drink,currently_drinking,medical_history,data/medical_history/currently_drinking,False,False,-,None,False,True,True
+136,curr_smok,currently_smoking,medical_history,data/medical_history/currently_smoking,False,False,-,None,False,True,True
+137,curr_alcdis,alcohol_related_disorders,medical_history,data/medical_history/alcohol_related_disorders,False,False,-,None,False,True,True
+138,hst_cerinf,history_of_cerebral_infarction,medical_history,data/medical_history/history_of_cerebral_infarction,False,False,-,None,False,False,True
+139,hst_inf,history_of_infection_diagnosis,medical_history,data/medical_history/history_of_infection_diagnosis,False,False,-,None,False,False,True
+140,hst_copd,history_of_copd,medical_history,data/medical_history/history_of_copd,False,False,-,None,False,False,True
+141,hst_resfail,history_of_respiratory_failure,medical_history,data/medical_history/history_of_respiratory_failure,False,False,-,None,False,False,True
+142,hst_periart,history_of_peripheral_arterial_disease,medical_history,data/medical_history/history_of_peripheral_arterial_disease,False,False,-,None,False,False,True
+143,hst_parkin,history_of_parkinson_disease,medical_history,data/medical_history/history_of_parkinson_disease,False,False,-,None,False,False,True
+144,hst_metacid,history_of_metabolic_acidosis,medical_history,data/medical_history/history_of_metabolic_acidosis,False,False,-,None,False,False,True
+145,hst_hfail,history_of_heart_failure,medical_history,data/medical_history/history_of_heart_failure,False,False,-,None,False,False,True
+146,hst_livcer,history_of_liver_cirrhosis,medical_history,data/medical_history/history_of_liver_cirrhosis,False,False,-,None,False,False,True
+147,hst_obes,history_of_obesity,medical_history,data/medical_history/history_of_obesity,False,False,-,None,False,False,True
+148,hst_diab,history_of_diabetes_mellitus,medical_history,data/medical_history/history_of_diabetes_mellitus,False,False,-,None,False,False,True
+149,hst_kid,history_of_chronical_kidney_disease,medical_history,data/medical_history/history_of_chronical_kidney_disease,False,False,-,None,False,False,True
+150,hst_perivas,history_of_peripheral_vascular_disease,medical_history,data/medical_history/history_of_peripheral_vascular_disease,False,False,-,None,False,False,True
+151,hst_dem,history_of_dementia,medical_history,data/medical_history/history_of_dementia,False,False,-,None,False,False,True
+152,hst_alcdis,history_of_alcohol_related_disorders,medical_history,data/medical_history/history_of_alcohol_related_disorders,False,False,-,None,False,False,True
+153,hst_drink,drinking_history,medical_history,data/medical_history/drinking_history,False,False,-,None,False,False,True
+154,hst_smok,smoking_history,medical_history,data/medical_history/smoking_history,False,False,-,None,False,False,True
+155,hst_psy,history_of_psychiatric_disorder,medical_history,data/medical_history/history_of_psychiatric_disorder,False,False,-,None,False,False,True
+156,hst_chd,history_of_coronary_heart_disease,medical_history,data/medical_history/history_of_coronary_heart_disease,False,False,-,None,False,False,True
+157,hst_deh,history_of_dehydration,medical_history,data/medical_history/history_of_dehydration,False,False,-,None,False,False,True
+158,hst_apnea,history_of_sleep_apnea,medical_history,data/medical_history/history_of_sleep_apnea,False,False,-,None,False,False,True
+159,hst_tia,history_of_tia,medical_history,data/medical_history/history_of_tia,False,False,-,None,False,False,True
+160,hst_amput,history_of_amputation,medical_history,data/medical_history/history_of_amputation,False,False,-,None,False,False,True
+161,hst_del,history_of_unspecific_delir,medical_history,data/medical_history/history_of_unspecific_delir,False,False,-,None,False,False,True
+162,hst_cogimp,history_of_cognitive_impairment,medical_history,data/medical_history/history_of_cognitive_impairment,False,False,-,None,False,False,True
+163,hst_res,history_of_respiratory_failure,medical_history,data/medical_history/history_of_respiratory_failure,False,False,-,None,False,False,True
+164,hst_hyp,history_of_hypertension,medical_history,data/medical_history/history_of_hypertension,False,False,-,None,False,False,True
+165,prev_adm,number_of_previous_admissions,medical_history,data/medical_history/number_of_previous_admissions,False,False,-,None,True,False,True
+166,prev_surg,number_of_previous_surgeries,medical_history,data/medical_history/number_of_previous_surgeries,False,False,-,None,True,False,True
+167,lab_album_blood,lab_album_blood_gl,lab_values,data/lab_values/lab_album_blood_gl,True,True,g/l,"[1, 100]",False,False,False
+168,lab_aptt,lab_aptt_sek.,lab_values,data/lab_values/lab_aptt_sek.,True,True,sek,"[10, 250]",False,False,False
+169,lab_baso_abs,lab_baso_abs_nl,lab_values,data/lab_values/lab_baso_abs_nl,True,True,nl,"[0.001, 1]",False,False,False
+170,lab_bicar,lab_bicar_mmoll,lab_values,data/lab_values/lab_bicar_mmoll,True,True,mmoll,"[1, 100]",False,False,True
+171,lab_cl,lab_cl_mmoll,lab_values,data/lab_values/lab_cl_mmoll,True,True,mmol/l,"[60, 140]",False,False,False
+172,lab_creatinin,lab_creatinin_mgdl,lab_values,data/lab_values/lab_creatinin_mgdl,True,True,mg/dl,"[0.1, 10]",False,False,False
+173,lab_crp,lab_crp_mgl,lab_values,data/lab_values/lab_crp_mgl,True,True,mg/l,"[0.1, 150]",False,False,False
+174,lab_eryt,lab_eryt_pl,lab_values,data/lab_values/lab_eryt_pl,True,True,pl,"[0.5, 10]",False,False,False
+175,lab_fibri,lab_fibri_gl,lab_values,data/lab_values/lab_fibri_gl,True,True,g/l,"[0.1, 15]",False,False,False
+176,lab_ggt,lab_ggt_ul,lab_values,data/lab_values/lab_ggt_ul,True,True,ul,"[1, 200]",False,False,False
+177,lab_gluc,lab_gluc_mgdl,lab_values,data/lab_values/lab_gluc_mgdl,True,True,mg/dl,"[1, 500]",False,False,False
+178,lab_got,lab_got_ul,lab_values,data/lab_values/lab_got_ul,True,True,ul,"[1, 50]",False,False,False
+179,lab_hb,lab_hb_gdl,lab_values,data/lab_values/lab_hb_gdl,True,True,g/dl,"[1, 30]",False,False,True
+180,lab_hct_abs,lab_hct_ll,lab_values,data/lab_values/lab_hct_ll,True,True,ll,"[0.01, 1]",False,False,False
+181,lab_hct_rel,lab_hct_%,lab_values,data/lab_values/lab_hct_%,True,True,%,"[0.01, 100]",False,False,True
+182,lab_ldh,lab_ldh_ul,lab_values,data/lab_values/lab_ldh_ul,True,True,ul,"[10, 500]",False,False,False
+183,lab_leucocytes,lab_leucocytes_nl,lab_values,data/lab_values/lab_leucocytes_nl,True,True,nl,"[0.1, 250]",False,False,False
+184,lab_lymp_abs,lab_lymp_abs_nl,lab_values,data/lab_values/lab_lymp_abs_nl,True,True,nl,"[0.1, 50]",False,False,False
+185,lab_lymp_rel,lab_lymp_rel_%,lab_values,data/lab_values/lab_lymp_rel_%,True,True,%,"[0.1, 100]",False,False,False
+186,lab_mg,lab_mg_mmoll,lab_values,data/lab_values/lab_mg_mmoll,True,True,mmol/l,"[0.1, 5]",False,False,False
+187,lab_neut_abs,lab_neut_abs_nl,lab_values,data/lab_values/lab_neut_abs_nl,True,True,nl,"[0.1, 10]",False,False,False
+188,lab_pco2,lab_pco2_mmhg,lab_values,data/lab_values/lab_pco2_mmhg,True,True,mmHg,"[10, 250]",False,False,True
+189,lab_ph_blood,lab_ph_blood_phunit,lab_values,data/lab_values/lab_ph_blood_phunit,True,True,-,"[2, 10]",False,False,True
+190,lab_plate,lab_plate_nl,lab_values,data/lab_values/lab_plate_nl,True,True,nl,"[100, 1000]",False,False,False
+191,lab_po2,lab_po2_mmhg,lab_values,data/lab_values/lab_po2_mmhg,True,True,mmHg,"[10, 500]",False,False,True
+192,lab_potassium,lab_potassium_mmoll,lab_values,data/lab_values/lab_potassium_mmoll,True,True,mmol/l,"[1, 50]",False,False,True
+193,lab_procal,lab_procal_µgl,lab_values,data/lab_values/lab_procal_µgl,True,True,µgl,"[0.1, 2]",False,False,False
+194,lab_protein_blood,lab_protein_blood_gl,lab_values,data/lab_values/lab_protein_blood_gl,True,True,g/l,"[10, 150]",False,False,False
+195,lab_sodium,lab_sodium_mmoll,lab_values,data/lab_values/lab_sodium_mmoll,True,True,mmol/l,"[100, 340]",False,False,True
+196,lab_urea_acid,lab_urea_acid_mgdl,lab_values,data/lab_values/lab_urea_acid_mgdl,True,True,mg/l,"[0.1, 20]",False,False,False
