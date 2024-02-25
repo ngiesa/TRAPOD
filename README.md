@@ -12,13 +12,11 @@ The figure depicts the model architecture that is adapted from Vaswani et al. an
 ### Model Access
 
 Please find the trained models under /models, implemented baselines that were developed for POD are integrated into the /model_baselines folder. You can load the model with this command replacing XXXX with the models name:
-
 <code>
   model = torch.load("./models/XXXX.pt")
 </code>
 
 The TRAPOD architecture is based on a transformer model ingesting sequential data. Hence, you find the model under TRAN_SEQ in the /models folder. For testing the model, you need to preprocess 238 features converting clinical variables into the right units (see /metadata/variable_metadata.csv) and put them into the right order (see /metadata/feature_descriptives.xlsx). Features are converted to an equi-distance time grid using 3 min. sampling interval with the first intraoperative 30 minutes leading to 10 time steps. We used LOCF and mean imputation that are also derived for the z-standardization process for scaling features. We have used feature means from the training set that can also be read from the metadata files. Finally, if you have constructed a testing set M_test with dimensions 238x10xY with Y as the number of surgeries, you can apply the model with 
-
 <code>
   y_pred = model(M_test)
 </code>
