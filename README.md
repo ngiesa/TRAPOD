@@ -20,3 +20,5 @@ The TRAPOD architecture is based on a transformer model ingesting sequential dat
 <code>
   y_pred = model(M_test)
 </code>
+
+Additional files can be found in the /project folder and under /process. Execution of all the code is not feasible due to data sharing policies of our clinical institution. 
